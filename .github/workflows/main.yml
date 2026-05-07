@@ -1,0 +1,12 @@
+name: learning
+on: workflow_dispatch
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: adding evalue
+        id: hello
+        run: echo "name = Hi Kanchan" >> $GITHUB_OUTPUT
+      - name: call it 
+        run: echo "The output is ${{ steps.hello.outputs.name}}
+        
