@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: adding evalue
         id: hello
-        run: echo "name = Hi Kanchan" >> $GITHUB_OUTPUT
+        run: echo "name=Hi Kanchan" >> $GITHUB_OUTPUT
       - name: call it 
-        run: echo "The output is ${{ steps.hello.outputs.name}}
+        run: echo "The output is ${{ steps.hello.outputs.name}}"
         
