@@ -6,7 +6,7 @@ jobs:
    steps:
      - name: testing
        id: we
-       run: echo "name=My name is kanchan" >> $GITHUB_OUTPUT
+       run: echo "name=kanchan" >> $GITHUB_OUTPUT
      - name: calling
        run: echo "Your name is ${{ steps.we.outputs.name}}"
         
